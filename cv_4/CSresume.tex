@@ -4,14 +4,16 @@
 \usepackage{geometry}
 \usepackage{fontawesome}
 \usepackage{hyperref}
-\resumewidth = 7.2in 
-\geometry{left=.65in, top=.43in, right=.65in, bottom=.46in}
+\usepackage{enumitem}
+\resumewidth = 7.34in 
+\geometry{left=.58in, top=.44in, right=.58in, bottom=.47in}
 \newsectionwidth{0pt}  
+\linespread{1.1} 
 \begin{document} 
 \begin{footnotesize}
 \moveleft\hoffset\centerline{\LARGE\bf Charles Shi} 
 \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
-\moveleft\hoffset\centerline{shi46@illinois.edu \textbar{} 612 - 986 - 0487 \textbar{}  Eden Prairie, MN }  
+\moveleft\hoffset\centerline{shi46@illinois.edu \textbar{} (612) 986 - 0487 \textbar{}  Eden Prairie, MN }  
 \moveleft\hoffset\centerline{\faLinkedinSquare \vspace{2mm}  \href{https://www.linkedin.com/in/cshi02/}{linkedin.com/in/cshi02} \textbar{} \faGithub \vspace{2mm} \href{https://github.com/CharlesShi12}{github.com/CharlesShi12} \textbar{} \faUser \vspace{2mm} \href{https://charlesshi12.github.io/}{charlesshi12.github.io}} \vspace{-5mm}
 \begin{resume}
 \vspace{-5mm}
@@ -26,73 +28,83 @@
 \section{EXPERIENCE}
 \end{small}
 \vspace{.5mm}
-\textbf{Futurist Academy} — {\sl Software Developer Intern} \hfill July 2020 - September 2020\vspace{-4.25mm}
-
-Responsible for designing impactful projects that utilize TigerGraph's graph database and presenting the finished projects to a group of businesses ranging from startups to Fortune 500 companies.
- 
-\vspace{-3.75mm}
-
-\setlength{\parindent}{4ex}\underline{MedSearch:}
-\vspace{-4.75mm}
-\begin{itemize} \itemsep -2pt 
+\textbf{Futurist Academy} — {\sl Software Developer Intern} \hfill July 2020 - September 2020\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
 \item Created a similarity search algorithm called MedSearch that takes in the abstract of any research paper and outputs similar COVID-19 research papers to advance COVID-19 research.
-\vspace{1mm}
-\item Extracted keywords from over \textbf{125,000} COVID-19 research papers using Natural Language Processing and stored each paper's ID and keywords in TigerGraph (stored over \textbf{350,000} nodes \& \textbf{1,000,000} edges).
-\vspace{1mm}
-\item Wrote GSQL queries that found the most similar COVID-19 research papers using the NLP-extracted keywords, user-inputted abstract, and Jaccard similarity index.
-\vspace{1mm}
-\item Built and used a RESTful API for MedSearch's backend to safely interact with TigerGraph and enhance overall security.
 \end{itemize}
-\vspace{-4.5mm}
-
-\setlength{\parindent}{4ex}\underline{Patient Dashboard:}
-\vspace{-4.75mm}
+\vspace{-6.4mm}
 \begin{itemize} \itemsep -2pt 
-\item Developed a personalized patient dashboard that gives doctors and researchers an in-depth analysis of synthetic patient data through informative visualizations and statistics. 
+\item[$\circ$] Extracted keywords from over \textbf{125,000} COVID-19 research papers using Natural Language Processing.
 \vspace{1mm}
-\item Obtained Synthea-generated patient data and computed patient statistics by writing multiple GSQL queries in TigerGraph and programmed the patient dashboard and data visualizations using Dash and Plotly in Python.
+\item[$\circ$] Stored each paper's ID and keywords in a TigerGraph graph database (stored over \textbf{350,000} nodes \& \textbf{1,000,000} edges).
+\vspace{1mm}
+\item[$\circ$] Wrote GSQL queries that found the most similar COVID-19 research papers using the Jaccard similarity index.
+\vspace{1mm}
+\item[$\circ$] Built and used a RESTful API for MedSearch's backend to safely interact with TigerGraph and enhance overall security.
+\end{itemize}
+\vspace{-6mm}
+\begin{itemize}[leftmargin=5.5mm]
+\item Developed a personalized patient dashboard that gives doctors and researchers an in-depth analysis of synthetic patient data through informative visualizations and statistics.
+\end{itemize}
+\vspace{-6.95mm}
+\begin{itemize} \itemsep -2pt 
+\item[$\circ$] Obtained Synthea-generated patient data and computed patient statistics by writing multiple GSQL queries in TigerGraph.
+\vspace{1mm}
+\item[$\circ$] Programmed the patient dashboard and data visualizations using Dash and Plotly in Python.
 \end{itemize}
 \vspace{-2.5mm}
-\textbf{STEM Builders} — {\sl Computer Science and Robotics Teacher} \hfill September 2018 - Present\vspace{-4.75mm}
-\begin{itemize} \itemsep -2pt 
+\textbf{STEM Builders} — {\sl Computer Science and Robotics Teacher} \hfill September 2018 - Present\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
 \item Taught programming languages (Python, Java, HTML/CSS, MIT App Inventor, Scratch) and robotics to \textbf{K-8} students. 
+\end{itemize}
+\vspace{-6.4mm}
+\begin{itemize} \itemsep -2pt 
+\item[$\circ$] Successfully managed hundreds of students and gained leadership experience after adapting to unforeseen circumstances. 
 \vspace{1mm}
-\item Created learning plans tailored to each student's ability and designed final projects that assessed the students' problem solving skills while incorporating their interests and curiosities. 
+\item[$\circ$] Designed/planned final projects that assessed the students' problem solving skills while incorporating their interests.
 \end{itemize}
 \begin{small}
 \section{PROJECTS}
 \end{small} 
 \vspace{.5mm}
-\href{https://github.com/CharlesShi12/CalcShare}{\textbf{CalcShare}} — {\sl Kotlin, Javalin, JavaScript, HTML/CSS, WebSockets, APIs} \hfill August 2020\vspace{-4.75mm}
-\begin{itemize} \itemsep -2pt 
+\href{https://github.com/CharlesShi12/CalcShare}{\textbf{CalcShare}} — {\sl JavaScript, HTML/CSS, Kotlin, Javalin,  WebSockets, APIs} \hfill August 2020\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
 \item Constructed an interactive web-based calculator that allows real-time collaboration between users. 
+\end{itemize}
+\vspace{-6.4mm}
+\begin{itemize} \itemsep -2pt 
+\item[$\circ$] Utilized Kotlin to design a server with unique IDs for each room and data structures that store each room's collaborators and their previous calculations.
 \vspace{1mm}
-\item Utilized Kotlin to design a server with unique IDs for each room and data structures that store each room's collaborators and their previous calculations.
-\vspace{1mm}
-\item Developed a JavaScript client to communicate with the server, implemented WebSockets to handle the constant influx of data, and interacted with a RESTful API to compute equations inputted by the user.  
+\item[$\circ$] Developed a JavaScript client to communicate with the server, implemented WebSockets to handle the constant influx of data, and interacted with a RESTful API to compute equations inputted by the user. 
 \end{itemize}
 \vspace{-2.5mm}
-\href{https://github.com/CharlesShi12/AI_Tumor_Scanner}{\textbf{AI Tumor Scanner}} — {\sl Python, TensorFlow/Keras, Streamlit, Neural Network}\hfill July 2020\vspace{-4.75mm}
-\begin{itemize} \itemsep -2pt 
+\href{https://github.com/CharlesShi12/AI_Tumor_Scanner}{\textbf{AI Tumor Scanner}} — {\sl Python, TensorFlow/Keras, Streamlit, Neural Network}\hfill July 2020\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
 \item Collaborated with a team of three other developers to create a Convolutional Neural Network capable of identifying tumors from brain MRI scans. 
-\vspace{1mm}
-\item Built the neural network with TensorFlow/Keras and used data augmentation to train it with over \textbf{7,000} images.
-\vspace{1mm}
-\item Tested and modified the neural network to obtain a final average accuracy of \textbf{95\%}.
 \end{itemize}
-\vspace{-2.5mm}
-\href{https://github.com/CharlesShi12/GibberishGenerator}{\textbf{Gibberish Generator}} — {\sl Java, Trie Data Structure, Conditional Probability} \hfill May 2020\vspace{-4.75mm}
+\vspace{-6.4mm}
 \begin{itemize} \itemsep -2pt 
-\item Programmed an algorithm in Java that generates random English-like words using a model and optimized data structures.  
-\vspace{-2.75mm}
-\item Trained the model with over \textbf{80,000} English words to produce accurate/pronounceable outputs and designed a Trie data structure for efficiency.
+\item[$\circ$] Built the neural network with TensorFlow/Keras and used data augmentation to train it with over \textbf{7,000} images.
+\vspace{1mm}
+\item[$\circ$] Tested and modified the neural network to obtain a final average accuracy of \textbf{95\%}. 
 \end{itemize}
 \vspace{-2.5mm}
-\href{https://github.com/CharlesShi12/ImageFilters}{\textbf{Image Filtering System}} — {\sl Python, Machine Learning, PPM Image Formatting} \hfill March 2020\vspace{-4.75mm}
-\begin{itemize} \itemsep -2pt
+\href{https://github.com/CharlesShi12/GibberishGenerator}{\textbf{Gibberish Generator}} — {\sl Java, Trie Data Structure, Conditional Probability} \hfill May 2020\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
+\item Programmed an algorithm in Java that generates random English-like words using a model and highly optimized data structures. 
+\end{itemize}
+\vspace{-6.4mm}
+\begin{itemize} \itemsep -2pt 
+\item[$\circ$] Trained the model with over \textbf{80,000} English words to produce accurate/pronounceable outputs and designed a Trie data structure for efficiency.
+\end{itemize}
+\vspace{-2.5mm}
+\href{https://github.com/CharlesShi12/ImageFilters}{\textbf{Image Filtering System}} — {\sl Python, Machine Learning, PPM Image Formatting} \hfill March 2020\vspace{-5mm}
+\begin{itemize}[leftmargin=5.5mm]
 \item Implemented a Python program that uses unsupervised machine learning to filter/reduce an image down to however many core colors its users select.
-\vspace{1mm}
-\item Applied PPM raster image formatting and constructed a k-means clustering algorithm to find the dominant colors of an inputted image and filter/reduce the image based on those colors. 
+\end{itemize}
+\vspace{-6.4mm}
+\begin{itemize} \itemsep -2pt 
+\item[$\circ$] Applied PPM raster image formatting and constructed a k-means clustering algorithm to find the dominant colors of an inputted image and filter/reduce the image based on those colors. 
 \end{itemize}
 \begin{small}
 \section{SKILLS}
